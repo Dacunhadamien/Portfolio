@@ -1,4 +1,3 @@
-import backgroundImage from "../../images/bckgrnd.jpg";
 import githubwhite from "../../images/github_white.png";
 import Project from "../Components/Project";
 import { data } from "../../data/project";
@@ -6,11 +5,8 @@ import { FaArrowUp } from "react-icons/fa";
 function Home() {
   return (
     <div className="flex justify-center flex-col items-center" id="top">
-      <div
-        className="home font-montserrat flex justify-center items-center flex-col bg-cover bg-center size-11/12 text-white rounded-3xl shadow-xl my-10"
-        style={{ backgroundImage: `url(${backgroundImage})` }}
-      >
-        <h1 className="text-8xl text-center m-12 font-Alt">
+      <div className="font-montserrat flex justify-center items-center flex-col bg-cover bg-center size-11/12 text-white rounded-3xl shadow-xl my-10 bg-backgroundImage bg-black">
+        <h1 className="text-8xl text-center m-12 font-Alt brightness-100">
           Bienvenue sur<br></br> mon portfolio !
         </h1>
         <div className="flex items-center justify-center flex-col m-5 text-l size-1/2 text-center">
