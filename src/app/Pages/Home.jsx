@@ -19,7 +19,7 @@ function Home() {
         <div className="flex justify-center items-center flex-row p-3"></div>
         <span className="text-xl">Accédez à mes répos GitHub ci dessous :</span>
         <a href="https://github.com/Dacunhadamien" className=" flex justify-center items-center flex-col">
-          <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-150 transition duration-500 "></img>
+          <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-125 transition duration-500 "></img>
         </a>
       </div>
       {data.map((items, index) => (
