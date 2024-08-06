@@ -9,11 +9,7 @@ const Project = (props) => {
       <div className="flex justify-between items-center m-5">
         <a href={props.github} className="flex justify-center items-center flex-start rounded-3xl size-2/4 group">
           <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-300 ease-in-out relative shadow-xl"></img>
-          <img
-            src={logogithub}
-            alt="Logo GitHub"
-            className=" opacity-0 absolute size-32 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:scale-125 group-hover:animate-bounce"
-          ></img>
+          <img src={logogithub} alt="Logo GitHub" className=" opacity-0 absolute size-32 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:scale-125 animate-bounce"></img>
         </a>
         <div className="flex flex-row justify-center items-center w-1/2">
           <div className="flex justify-center items-center flex-col w-1/2">

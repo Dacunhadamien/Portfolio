@@ -21,9 +21,9 @@ function Home() {
           <p>Dans mes différents projets, j'ai eu la chances de développer des compétences, telles que :</p>
         </div>
         <div className="flex justify-center items-center flex-row p-3"></div>
-        <span className="text-xl m-3">Accédez à mes répos GitHub ci dessous :</span>
+        <span className="text-xl">Accédez à mes répos GitHub ci dessous :</span>
         <a href="https://github.com/Dacunhadamien" className=" flex justify-center items-center flex-col">
-          <img src={githubwhite} alt="Logo GitHub" className="w-12 h-12 m-10 hover:scale-125 transition duration-300 "></img>
+          <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-150 transition duration-500 "></img>
         </a>
       </div>
       {data.map((items, index) => (
