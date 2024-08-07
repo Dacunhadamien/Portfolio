@@ -4,8 +4,8 @@ export const data = [
     id: "HTML/CSS",
     description: "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
     skills: [
-      { logo: require("../images/html.png"), url: "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" },
-      { logo: require("../images/css.png"), url: "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" },
+      { logo: require("../images/html.png"), url: "https://developer.mozilla.org/fr/docs/Web/HTML" },
+      { logo: require("../images/css.png"), url: "https://developer.mozilla.org/fr/docs/Web/CSS" },
     ],
     difficulties: ["Découvrir mon premier language de code", "Appréhender le responsive design", "Maitrise de flexbox"],
     cover: require("../images/booki.png"),
@@ -19,8 +19,8 @@ export const data = [
     id: "JS",
     description: "Créez une page web dynamique avec JavaScript",
     skills: [
-      { logo: require("../images/js.png"), url: "https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript" },
-      { logo: require("../images/css.png"), url: "https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" },
+      { logo: require("../images/js.png"), url: "https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics" },
+      { logo: require("../images/css.png"), url: "https://developer.mozilla.org/fr/docs/Web/CSS" },
     ],
     difficulties: ["Découverte de la logique de programmation", "Création de modale", "Appréhender le terminal et la gestion d'erreurs", "Premier pas face à une API"],
     cover: require("../images/sophie.png"),
@@ -34,8 +34,8 @@ export const data = [
     id: "SEO",
     description: "Débuggez et optimisez un site de photographe",
     skills: [
-      { logo: require("../images/seo.png"), url: "https://openclassrooms.com/fr/courses/5561431-augmentez-votre-trafic-grace-au-referencement-naturel-seo" },
-      { logo: require("../images/accessibility.png"), url: "https://openclassrooms.com/fr/courses/6691346-concevez-un-contenu-web-accessible" },
+      { logo: require("../images/seo.png"), url: "https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/guide-du-debutant-en-referencement" },
+      { logo: require("../images/accessibility.png"), url: "https://www.w3.org/WAI/fundamentals/accessibility-intro/" },
     ],
     difficulties: ["Être extrêmement rigoureux sur la création de documents de synthèse", "Compétences de présentation"],
     cover: require("../images/nina.png"),
@@ -50,10 +50,10 @@ export const data = [
     skills: [
       {
         logo: require("../images/react.png"),
-        url: "https://openclassrooms.com/fr/courses/7008001-debutez-avec-react",
+        url: "https://fr.react.dev",
       },
-      { logo: require("../images/sass.png"), url: "https://openclassrooms.com/fr/courses/8069761-simplifiez-vous-le-css-avec-sass" },
-      { logo: require("../images/js.png"), url: "https://openclassrooms.com/fr/courses/7697016-creez-des-pages-web-dynamiques-avec-javascript" },
+      { logo: require("../images/sass.png"), url: "https://sass-lang.com" },
+      { logo: require("../images/js.png"), url: "https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics" },
     ],
     difficulties: ["Découper une maquette en composants", "Découverte et compréhension du UserState/UserEffect", "Logique de routage avec react-dom-router"],
     cover: require("../images/kasa.png"),
@@ -67,8 +67,8 @@ export const data = [
     id: "BACKEND",
     description: "Développez le back-end d'un site de notation de livres",
     skills: [
-      { logo: require("../images/mongodb.png"), url: "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb" },
-      { logo: require("../images/nodejs.png"), url: "https://openclassrooms.com/fr/courses/6390246-passez-au-full-stack-avec-node-js-express-et-mongodb" },
+      { logo: require("../images/mongodb.png"), url: "https://www.mongodb.com/fr-fr" },
+      { logo: require("../images/nodejs.png"), url: "https://nodejs.org/fr" },
     ],
     difficulties: ["Être très attentif à la création de routes en fonction d'un document technique", "Rigueur lié à la syntaxe"],
     cover: require("../images/mvg.png"),

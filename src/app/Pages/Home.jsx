@@ -19,7 +19,7 @@ function Home() {
             </p>
           </div>
           <div className="flex justify-center items-center flex-row p-3"></div>
-          <span className="text-xl text-center animate-pulse">Accédez à mes répos GitHub ci dessous :</span>
+          <span className="md:text-xl text-center animate-pulse">Accédez à mes répos GitHub ci dessous :</span>
           <a href="https://github.com/Dacunhadamien" target="_blank" rel="noreferrer" className=" flex justify-center items-center flex-col">
             <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-125 transition duration-500 "></img>
           </a>
