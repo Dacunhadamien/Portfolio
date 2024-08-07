@@ -27,10 +27,10 @@ const Project = (props) => {
             })}
           </div>
           <div className={"flex justify-start flex-col w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
-            <h3 className="font-semibold text-lg md:text-xl text-center font-Alt p-2.5 my-2">Difficultées rencontrées</h3>
+            <h3 className="font-semibold text-sm md:text-xl text-center font-Alt p-2.5 my-2">Difficultées rencontrées</h3>
             {props.difficulties.map((difficulties, index) => {
               return (
-                <p key={index} className="p-2.5 my-2 text-sm md:text-base">
+                <p key={index} className="p-2.5 my-2 text-xs md:text-base">
                   {difficulties}
                 </p>
               );
