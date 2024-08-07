@@ -40,7 +40,7 @@ function Home() {
           ></Project>
         ))}
         <a href="#top">
-          <FaArrowUp size={70} className="border-4 border-dashed border-black text-custom-yellow rounded-3xl hover:animate-pulse my-20 hover:scale-125 transform duration-300" />
+          <FaArrowUp className="border-4 md:size-20 size-16 border-dashed border-black text-custom-yellow rounded-3xl hover:animate-pulse my-20 hover:scale-125 transform duration-300" />
         </a>
       </div>
     </div>
