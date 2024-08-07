@@ -14,11 +14,10 @@ function Home() {
             Je suis un <span className="text-custom-yellow">ancien ingénieur du son</span> et compositeur reconvertit en <span className="text-custom-yellow">développeur full-stack</span>, et ceci est
             le résumé de mon travail.
           </p>
-          <p>Dans mes différents projets, j'ai eu la chances de développer des compétences, telles que :</p>
         </div>
         <div className="flex justify-center items-center flex-row p-3"></div>
-        <span className="text-xl">Accédez à mes répos GitHub ci dessous :</span>
-        <a href="https://github.com/Dacunhadamien" className=" flex justify-center items-center flex-col">
+        <span className="text-xl animate-pulse">Accédez à mes répos GitHub ci dessous :</span>
+        <a href="https://github.com/Dacunhadamien" target="_blank" rel="noreferrer" className=" flex justify-center items-center flex-col">
           <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-125 transition duration-500 "></img>
         </a>
       </div>
