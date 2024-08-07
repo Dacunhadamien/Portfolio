@@ -15,9 +15,9 @@ const Project = (props) => {
             className=" opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:scale-125 animate-bounce"
           ></img>
         </a>
-        <div className="flex flex-row justify-center items-center md:w-1/2 my-10">
-          <div className="flex justify-center items-center flex-col w-1/2">
-            <h3 className="font-semibold text-xl text-center font-Alt my-3">Compétences apprises</h3>
+        <div className="flex flex-col md:flex-row justify-center items-center md:w-1/2 my-10">
+          <div className="flex justify-center items-center flex-row md:flex-col md:w-1/2">
+            <h3 className="font-semibold text-lg md:text-xl text-center font-Alt my-3">Compétences apprises</h3>
             {props.skills.map((logos, index) => {
               return (
                 <a href={logos.url} key={index} target="_blank" rel="noreferrer">
@@ -26,15 +26,17 @@ const Project = (props) => {
               );
             })}
           </div>
-          <div className={"flex justify-start flex-col w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
+          <div className={"flex my-5 justify-start flex-wrap flex-col md:w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
             <h3 className="font-semibold text-sm md:text-xl text-center font-Alt p-2.5 my-2">Difficultées rencontrées</h3>
-            {props.difficulties.map((difficulties, index) => {
-              return (
-                <p key={index} className="p-2.5 my-2 text-xs md:text-base">
-                  {difficulties}
-                </p>
-              );
-            })}
+            <div className="flex flex-row flex-wrap">
+              {props.difficulties.map((difficulties, index) => {
+                return (
+                  <p key={index} className="p-2.5 my-2 text-xs md:text-base">
+                    {difficulties}
+                  </p>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>
