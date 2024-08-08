@@ -3,7 +3,10 @@ import logogithub from "../../images/github.png";
 
 const Project = (props) => {
   return (
-    <div className={"flex justify-center my-10 py-8 shadow-xl size-11/12 rounded-3xl flex-col items-center " + props.bgcolor + props.txtcolor} id={props.id}>
+    <div
+      className={"md:hover:scale-105 transform duration-500 ease-in-out flex justify-center my-10 py-8 shadow-xl size-10/12 rounded-3xl flex-col items-center " + props.bgcolor + props.txtcolor}
+      id={props.id}
+    >
       <h2 className="font-bold m-5 font-Alt text-2xl md:text-5xl text-center">{props.title}</h2>
       <h3 className="md:text-xl text-lg italic text-center md:size-full size-3/4">{props.description}</h3>
       <div className="flex flex-col md:flex-row md:justify-between items-center m-5">
