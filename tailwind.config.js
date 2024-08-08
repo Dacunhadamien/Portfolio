@@ -12,7 +12,7 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        backgroundImage: "url(/src/images/bckgrnd2.jpg)",
+        backgroundImage: "url(/src/images/bckgrnd2.webp)",
       },
 
       fontFamily: {

@@ -13,7 +13,7 @@ function Wip() {
         <Slider logo={data} />
         <Link
           to="/"
-          className="text-xl md:text-3xl m-20 hover:scale-110 text-custom-green hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px]  ease-out animate-pulse text-center"
+          className="text-xl md:text-3xl m-20 hover:scale-110 text-custom-green hover:text-custom-yellow transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-yellow bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px]  ease-out text-center"
         >
           Retourner sur la page d'acceuil
         </Link>

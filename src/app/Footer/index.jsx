@@ -1,4 +1,4 @@
-import githubwhite from "../../images/github_white.png";
+import githubwhite from "../../images/github_white.webp";
 import "typeface-montserrat";
 function Footer() {
   return (

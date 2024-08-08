@@ -1,4 +1,4 @@
-import githubwhite from "../../images/github_white.png";
+import githubwhite from "../../images/github_white.webp";
 import Project from "../Components/Project";
 import { data } from "../../data/project";
 import { FaArrowUp } from "react-icons/fa";

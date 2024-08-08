@@ -1,5 +1,5 @@
 import React from "react";
-import logogithub from "../../images/github.png";
+import logogithub from "../../images/github.webp";
 
 const Project = (props) => {
   return (
@@ -19,7 +19,7 @@ const Project = (props) => {
           ></img>
         </a>
         <div className="flex flex-col md:flex-row justify-center items-center md:w-1/2 my-10">
-          <div className="flex justify-center items-center flex-col md:w-1/2">
+          <div className="md:hover:scale-105 transform duration-500 ease-in-out flex justify-center items-center flex-col md:w-1/2">
             <h3 className="font-semibold text-lg md:text-xl text-center font-Alt my-3">Compétences apprises</h3>
             <div className="flex flex-row md:flex-col">
               {props.skills.map((logos, index) => {
@@ -31,7 +31,7 @@ const Project = (props) => {
               })}
             </div>
           </div>
-          <div className={"flex my-5 justify-start flex-wrap flex-col md:w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
+          <div className={"md:hover:scale-105 transform duration-500 ease-in-out flex my-5 justify-start flex-wrap flex-col md:w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
             <h3 className="font-semibold text-lg md:text-xl text-center font-Alt p-2.5 my-2">Difficultées rencontrées</h3>
             <div className="flex flex-col flex-wrap">
               {props.difficulties.map((difficulties, index) => {
