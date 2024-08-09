@@ -11,7 +11,7 @@ function Header() {
       </a>
       <Link
         to="/"
-        className="md:block hidden text-base md:text-lg mx-16 hover:scale-110 text-white hover:text-custom-yellow transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-yellow bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px]  ease-out text-center"
+        className="md:block hidden font-Alt text-base md:text-lg mx-16 hover:scale-110 text-white hover:text-custom-yellow transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-yellow bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px]  ease-out text-center"
       >
         Page d'acceuil
       </Link>

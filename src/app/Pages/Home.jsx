@@ -26,7 +26,7 @@ function Home() {
           <a href="https://github.com/Dacunhadamien" target="_blank" rel="noreferrer" className=" flex justify-center items-center flex-col">
             <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-125 transition duration-500 "></img>
           </a>
-          <h2 className="font-Alt text-xl text-white mt-10 size-10/12 text-center">Rendez-vous en bas de la page pour plus de liens et d'informations</h2>
+          <h2 className="font-Alt text-xl text-white mt-10 size-10/12 text-center">Rendez-vous en bas de la page pour plus de liens et d'informations !</h2>
           <a href="#bot">
             <FaArrowDown className="border-8 md:size-20 size-16 border-double border-white text-custom-yellow rounded-3xl hover:text-custom-red my-20 hover:scale-125 transform duration-300" />
           </a>
@@ -46,15 +46,15 @@ function Home() {
             cardtxtcolor={items.cardtextcolor}
           ></Project>
         ))}
-        <div className="flex flex-col justify-center items-center">
+        <div className="flex flex-col items-center justify-center group">
           <a href="#top">
-            <FaArrowUp className="border-8 md:size-20 size-16 border-double border-black text-custom-yellow rounded-3xl hover:text-custom-red mt-20 mb-10 hover:scale-125 transform duration-300" />
+            <FaArrowUp className="border-8 md:size-20 size-16 border-double border-black text-custom-yellow rounded-3xl group-hover:text-custom-red my-10 group-hover:scale-125 transform duration-300" />
           </a>
-          <h2 className="text-2xl text-black mb-10 italic">Retour en haut !</h2>
+          <h2 className="text-2xl text-black mb-10 italic group-hover:text-custom-red group-hover:scale-125 transform duration-300">Retour en haut !</h2>
         </div>
       </div>
-      <div className="text-white flex justify-center object-center flex-col text-center pt-10 pb-5 bg-black" id="bot">
-        <p className="md:text-xl text-sm size-11/12 font-semibold text-custom-yellow font-Alt">Cliquez ci dessous pour découvrir mes compétences en cours d'acquisition :</p>
+      <div className="text-white flex justify-center items-center flex-col text-center pt-10 pb-5 bg-black" id="bot">
+        <p className="md:text-xl text-center text-sm size-11/12 font-semibold text-custom-yellow font-Alt">Cliquez ci dessous pour découvrir mes compétences en cours d'acquisition :</p>
         <Link to="/Wip" className="flex justify-center ">
           <TiPencil className="font-Alt md:size-20 size-16 mt-10 hover:scale-125 hover:text-custom-red transform duration-300 ease-out border-8 border-double rounded-3xl border-custom-yellow" />
         </Link>
