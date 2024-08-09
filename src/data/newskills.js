@@ -28,7 +28,7 @@ export const data = [
   },
   {
     logo: require("../images/vitejs.webp"),
-    name: "Vitejs",
+    name: "Vite.js",
     url: "https://vitejs.dev",
     what: "Vite.js est un outil de build moderne et rapide qui optimise le développement d'applications web en offrant des temps de démarrage quasi-instantanés grâce à son serveur de développement basé sur des modules ES natifs",
     why: "Il améliore la productivité des développeurs en offrant une expérience de développement fluide et sans attente, même dans les projets de grande envergure. Compatible avec les frameworks populaires comme React, Vue, et Svelte, Vite.js simplifie la configuration et le déploiement, tout en générant des bundles de production ultra-optimisés. En adoptant Vite.js, une entreprise peut accélérer son cycle de développement tout en assurant des performances optimales pour ses applications.",

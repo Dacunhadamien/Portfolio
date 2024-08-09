@@ -17,7 +17,7 @@ const Project = (props) => {
             <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out shadow-xl"></img>
             <GoDesktopDownload className={props.url ? "opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-500 ease-in-out" : "hidden"} />
             <div className={props.url ? "hidden" : "absolute flex flex-col justify-center items-center"}>
-              <GoClock className={"opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-500 ease-in-out " + props.cardtxtcolor} />
+              <GoClock className={"opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 group-hover:scale-110 transition duration-500 ease-in-out " + props.cardtxtcolor} />
             </div>
           </a>
           <p className={props.url ? "hidden" : "italic md:opacity-0 md:group-hover:opacity-100 transform duration-500"}>Désolé, ce projet n'est pas encore hébergé</p>
