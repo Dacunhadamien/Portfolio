@@ -52,6 +52,7 @@ function Home() {
             difficulties={items.difficulties}
             skills={items.skills}
             cardtxtcolor={items.cardtextcolor}
+            url={items.url}
           ></Project>
         ))}
         <div className="flex flex-col items-center justify-center group">

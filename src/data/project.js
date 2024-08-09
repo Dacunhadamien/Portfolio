@@ -3,6 +3,7 @@ export const data = [
     title: "Booki",
     id: "HTML/CSS",
     nav: "HTML/CSS",
+    url: "https://p2-da-cunha-damien.vercel.app",
     description: "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
     skills: [
       { logo: require("../images/html.webp"), url: "https://developer.mozilla.org/fr/docs/Web/HTML" },
@@ -35,6 +36,7 @@ export const data = [
     title: "Nina Carducci, photographe bordelaise",
     id: "SEO",
     nav: "SEO et accessibilité",
+    url: "https://p4-dacunha-damien.vercel.app",
     description: "Débuggez et optimisez un site de photographe",
     skills: [
       { logo: require("../images/seo.webp"), url: "https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/guide-du-debutant-en-referencement" },
@@ -50,6 +52,7 @@ export const data = [
     title: "Kasa",
     id: "REACT",
     nav: "React",
+    url: "https://p5-da-cunha-damien.vercel.app",
     description: "Créez une application web de location immobilière avec React",
     skills: [
       {
@@ -79,7 +82,7 @@ export const data = [
     cover: require("../images/mvg.webp"),
     bgcolor: "bg-white ",
     txtcolor: "text-custom-red",
-    cardtextcolor: "txt-custom-red",
+    cardtextcolor: "text-custom-red",
     github: "https://github.com/Dacunhadamien/P6_DaCunha_Damien",
   },
 ];
