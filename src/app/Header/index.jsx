@@ -1,4 +1,5 @@
 import "typeface-montserrat";
+import { data } from "../../data/project.js";
 
 function Header() {
   return (
@@ -9,36 +10,17 @@ function Header() {
         </span>
       </a>
       <nav className="m-5 md:flex md:flex-wrap justify-end flex-row hidden">
-        <a
-          href="#HTML/CSS"
-          className="xl:text-base text-xs xl:m-5 m-2 hover:scale-110 hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] ease-in-out"
-        >
-          HTML/CSS
-        </a>
-        <a
-          href="#JS"
-          className="xl:text-base text-xs xl:m-5 m-2 hover:scale-110 hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] ease-in-out"
-        >
-          JavaScript
-        </a>
-        <a
-          href="#SEO"
-          className="xl:text-base text-xs xl:m-5 m-2 hover:scale-110 hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] ease-in-out"
-        >
-          SEO et accessibilité
-        </a>
-        <a
-          href="#REACT"
-          className="xl:text-base text-xs xl:m-5 m-2 hover:scale-110 hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] ease-in-out"
-        >
-          React
-        </a>
-        <a
-          href="#BACKEND"
-          className="xl:text-base text-xs xl:m-5 m-2 hover:scale-110 hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] ease-in-out"
-        >
-          Node.js
-        </a>
+        {data.map((item, index) => {
+          return (
+            <a
+              key={index}
+              href={"#" + item.id}
+              className="xl:text-base text-xs xl:m-5 m-2 hover:scale-110 hover:text-custom-red transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-red bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px] ease-in-out"
+            >
+              {item.nav}
+            </a>
+          );
+        })}
       </nav>
     </div>
   );

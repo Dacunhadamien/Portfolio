@@ -15,21 +15,29 @@ function Home() {
           <h1 className="mg:text-8xl text-6xl text-center m-12 font-Alt">
             Bienvenue sur<br></br> mon portfolio !
           </h1>
-          <div className="flex items-center justify-center flex-col m-5 text-l size-1/2 text-center">
+          <div className="m-5 text-l size-1/2 text-center">
             <p>
               Je suis un <span className="font-semibold text-custom-yellow">ancien ingénieur du son</span> et compositeur reconvertit en{" "}
               <span className="font-semibold text-custom-yellow">développeur full-stack</span>, et ceci est le résumé de mon travail.
             </p>
           </div>
-          <div className="flex justify-center items-center flex-row p-3"></div>
-          <span className="md:text-xl text-center animate-pulse">Accédez à mes répos GitHub ci dessous :</span>
-          <a href="https://github.com/Dacunhadamien" target="_blank" rel="noreferrer" className=" flex justify-center items-center flex-col">
-            <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-125 transition duration-500 "></img>
-          </a>
-          <h2 className="font-Alt text-xl text-white mt-10 size-10/12 text-center">Rendez-vous en bas de la page pour plus de liens et d'informations !</h2>
-          <a href="#bot">
-            <FaArrowDown className="border-8 md:size-20 size-16 border-double border-white text-custom-yellow rounded-3xl hover:text-custom-red my-20 hover:scale-125 transform duration-300" />
-          </a>
+          <div className="flex justify-center items-center flex-col p-3 mt-5">
+            <span className="md:text-xl font-Alt text-center">Accédez à mes répos GitHub ci dessous :</span>
+            <a href="https://github.com/Dacunhadamien" target="_blank" rel="noreferrer" className=" flex justify-center items-center flex-col ">
+              <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-125 transition duration-500 "></img>
+            </a>
+          </div>
+          <h2 className="font-Alt md:text-xl text-white my-10 size-10/12 text-center">Découvrir mes compétences en cours d'acquisition ici :</h2>
+          <Link to="/Wip" className="flex justify-center ">
+            <TiPencil className="font-Alt md:size-20 size-16 hover:scale-125 hover:text-custom-yellow transform duration-500 ease-in-out border-8 border-double rounded-3xl border-custom-yellow" />
+          </Link>
+          <div className="flex flex-col items-center justify-center">
+            <h2 className="font-Alt md:text-xl text-white my-10 size-10/12 text-center">Vous trouverez les différents projets ci-dessous :</h2>
+
+            <a href="#HTML/CSS">
+              <FaArrowDown className="md:size-16 animate-bounce size-12 text-custom-yellow rounded-3xl hover:text-custom-red my-10 hover:scale-110 transform duration-500" />
+            </a>
+          </div>
         </div>
         {data.map((items, index) => (
           <Project

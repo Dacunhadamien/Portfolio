@@ -2,6 +2,7 @@ export const data = [
   {
     title: "Booki",
     id: "HTML/CSS",
+    nav: "HTML/CSS",
     description: "Créez la page d'accueil d'une agence de voyage avec HTML & CSS",
     skills: [
       { logo: require("../images/html.webp"), url: "https://developer.mozilla.org/fr/docs/Web/HTML" },
@@ -17,6 +18,7 @@ export const data = [
   {
     title: "Sophie Bluel, architecte d'intérieur",
     id: "JS",
+    nav: "JavaScript",
     description: "Créez une page web dynamique avec JavaScript",
     skills: [
       { logo: require("../images/js.webp"), url: "https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics" },
@@ -32,6 +34,7 @@ export const data = [
   {
     title: "Nina Carducci, photographe bordelaise",
     id: "SEO",
+    nav: "SEO et accessibilité",
     description: "Débuggez et optimisez un site de photographe",
     skills: [
       { logo: require("../images/seo.webp"), url: "https://www.francenum.gouv.fr/guides-et-conseils/communication-et-publicite/referencement/guide-du-debutant-en-referencement" },
@@ -46,6 +49,7 @@ export const data = [
   {
     title: "Kasa",
     id: "REACT",
+    nav: "React",
     description: "Créez une application web de location immobilière avec React",
     skills: [
       {
@@ -65,6 +69,7 @@ export const data = [
   {
     title: "Mon vieux grimoire",
     id: "BACKEND",
+    nav: "Node.js",
     description: "Développez le back-end d'un site de notation de livres",
     skills: [
       { logo: require("../images/mongodb.webp"), url: "https://www.mongodb.com/fr-fr" },

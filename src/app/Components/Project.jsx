@@ -11,12 +11,8 @@ const Project = (props) => {
       <h3 className="md:text-xl text-lg italic text-center md:size-full size-3/4">{props.description}</h3>
       <div className="flex flex-col md:flex-row md:justify-between items-center m-5">
         <a href={props.github} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl size-11/12 md:size-2/4 group">
-          <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-300 ease-in-out relative shadow-xl"></img>
-          <img
-            src={logogithub}
-            alt="Logo de GitHub"
-            className=" opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-300 ease-in-out group-hover:scale-125 animate-bounce"
-          ></img>
+          <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out relative shadow-xl"></img>
+          <img src={logogithub} alt="Logo de GitHub" className=" opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-500 ease-in-out animate-bounce"></img>
         </a>
         <div className="flex flex-col md:flex-row justify-center items-center md:w-1/2 my-10">
           <div className="md:hover:scale-105 transform duration-500 ease-in-out flex justify-center items-center flex-col md:w-1/2">
@@ -31,7 +27,7 @@ const Project = (props) => {
               })}
             </div>
           </div>
-          <div className={"md:hover:scale-105 transform duration-500 ease-in-out flex my-5 justify-start flex-wrap flex-col md:w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
+          <div className={"hover:scale-105 transform duration-500 ease-in-out flex my-5 justify-start flex-wrap flex-col md:w-1/2 rounded-3xl shadow-xl p-4 bg-white " + props.cardtxtcolor}>
             <h3 className="font-semibold text-lg md:text-xl text-center font-Alt p-2.5 my-2">Difficultées rencontrées</h3>
             <div className="flex flex-col flex-wrap">
               {props.difficulties.map((difficulties, index) => {

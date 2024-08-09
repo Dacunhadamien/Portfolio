@@ -10,7 +10,7 @@ const Slider = ({ logo }) => {
     setSlide(slide === 0 ? logo.length - 1 : slide - 1);
   };
   return (
-    <div className="flex justify-center items-center flex-col relative mt-0 md:mt-10 w-full md:h-[74rem] h-[67rem]">
+    <div className="flex justify-center items-center flex-col relative mt-0 md:mt-10 w-full md:h-[74rem] sm:h-[56rem] h-[67rem]">
       {logo.map((item, index) => {
         return (
           <div
@@ -39,7 +39,7 @@ const Slider = ({ logo }) => {
               <p className=" text-sm lg:text-base font-montserrat mt-2 mb-5 text-center">{item.what}</p>
               <h2 className=" text-base md:text-lg font-Alt mt-2 mb-5 text-center">{"Pourquoi " + item.name + " est-il intéressant pour votre projet ?"}</h2>
               <p className=" text-sm lg:text-base font-montserrat mt-2 mb-5 text-center">{item.why}</p>
-              <div className="flex flex-row justify-between items-center w-10/12 my-10">
+              <div className="flex flex-row justify-between items-center w-8/12 my-10">
                 <FaChevronLeft
                   className={`${logo.length === 1 ? "hidden" : "block size-[1.5rem] md:size-[4rem] rounded-3xl hover:scale-110 transform duration-300 ease-in-out"}`}
                   onClick={PrevSlide}
