@@ -3,6 +3,10 @@ import logogithub from "../../images/github.webp";
 import { GoDesktopDownload } from "react-icons/go";
 import { GoClock } from "react-icons/go";
 
+const Alert = function () {
+  alert("Désolé, ce site n'est pas encore hébergé");
+};
+
 const Project = (props) => {
   return (
     <div
@@ -13,14 +17,13 @@ const Project = (props) => {
       <h3 className="md:text-xl text-lg italic text-center md:size-full size-3/4">{props.description}</h3>
       <div className="flex flex-col md:flex-row md:justify-between items-center m-5">
         <div className="flex flex-col justify-center items-center size-11/12 md:size-2/4 group">
-          <a href={props.url} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl group relative my-10">
+          <a href={props.url} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl group relative my-10" onClick={props.url ? null : Alert}>
             <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out shadow-xl"></img>
             <GoDesktopDownload className={props.url ? "opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-500 ease-in-out" : "hidden"} />
             <div className={props.url ? "hidden" : "absolute flex flex-col justify-center items-center"}>
               <GoClock className={"opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 group-hover:scale-110 transition duration-500 ease-in-out " + props.cardtxtcolor} />
             </div>
           </a>
-          <p className={props.url ? "hidden" : "italic md:opacity-0 md:group-hover:opacity-100 transform duration-500"}>Désolé, ce projet n'est pas encore hébergé</p>
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center md:w-1/2 my-10">
           <div className="md:hover:scale-105 transform duration-500 ease-in-out flex justify-center items-center flex-col md:w-1/2">

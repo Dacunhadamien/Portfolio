@@ -14,7 +14,10 @@ function Wip() {
         <Slider logo={data} />
         <div className="hidden md:flex flex-col items-center justify-center group">
           <a href="#top">
-            <FaArrowUp className="border-8 md:size-20 size-16 border-double border-black text-custom-yellow rounded-3xl group-hover:text-custom-red my-10 group-hover:scale-125 transform duration-300" />
+            <FaArrowUp
+              aria-label="arrowup_icon"
+              className="border-8 md:size-20 size-16 border-double border-black text-custom-yellow rounded-3xl group-hover:text-custom-red my-10 group-hover:scale-125 transform duration-300"
+            />
           </a>
           <h2 className="text-2xl text-black mb-10 italic group-hover:text-custom-red group-hover:scale-125 transform duration-300">Retour en haut !</h2>
         </div>
