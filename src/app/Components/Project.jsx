@@ -3,10 +3,6 @@ import logogithub from "../../images/github.webp";
 import { GoDesktopDownload } from "react-icons/go";
 import { GoClock } from "react-icons/go";
 
-const Alert = function () {
-  alert("Désolé, ce site n'est pas encore hébergé");
-};
-
 const Project = (props) => {
   return (
     <div
@@ -17,7 +13,7 @@ const Project = (props) => {
       <h3 className="md:text-xl text-lg italic text-center md:size-full size-3/4">{props.description}</h3>
       <div className="flex flex-col md:flex-row md:justify-between items-center m-5">
         <div className="flex flex-col justify-center items-center size-11/12 md:size-2/4 group">
-          <a href={props.url} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl group relative my-10" onClick={props.url ? null : Alert}>
+          <a href={props.url} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl group relative my-10">
             <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out shadow-xl"></img>
             <GoDesktopDownload className={props.url ? "opacity-0 absolute size-20 md:size-32 group-hover:opacity-100 transition duration-500 ease-in-out" : "hidden"} />
             <div className={props.url ? "hidden" : "absolute flex flex-col justify-center items-center"}>
