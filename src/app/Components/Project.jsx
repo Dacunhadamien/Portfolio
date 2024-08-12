@@ -13,13 +13,22 @@ const Project = (props) => {
       <h3 className="md:text-xl text-lg italic text-center lg:size-full size-3/4">{props.description}</h3>
       <div className="flex flex-col lg:flex-row md:justify-between items-center mt-5 mx-5">
         <div className="flex flex-col justify-center items-center size-11/12 lg:size-2/4 group">
-          <a href={props.url} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl group relative md:my-10">
-            <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out shadow-xl"></img>
-            <MdOpenInNew className={props.url ? "opacity-0 absolute size-20 lg:size-32 group-hover:opacity-100 transition duration-500 ease-in-out" : "hidden"} />
-            <div className={props.url ? "hidden" : "absolute flex flex-col justify-center items-center"}>
-              <GoClock className={"opacity-0 absolute size-20 lg:size-32 group-hover:opacity-100 group-hover:scale-110 transition duration-500 ease-in-out " + props.cardtxtcolor} />
+          {props.url ? (
+            <a href={props.url} target="_blank" rel="noreferrer" className="flex justify-center items-center flex-start rounded-3xl group relative md:my-10">
+              <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out shadow-xl"></img>
+              <MdOpenInNew className="opacity-0 absolute size-20 lg:size-32 group-hover:opacity-100 transition duration-500 ease-in-out" />
+            </a>
+          ) : (
+            <div className="flex flex-col justify-center items-center">
+              <div className="flex justify-center items-center flex-col rounded-3xl group relative md:my-10">
+                <img src={props.cover} alt={"Image de " + props.title} className="rounded-3xl group-hover:blur transition duration-500 ease-in-out shadow-xl"></img>
+                <div className="absolute flex flex-col justify-center items-center">
+                  <GoClock className={"opacity-0 size-20 lg:size-32 group-hover:opacity-100 group-hover:scale-110 transition duration-500 ease-in-out " + props.cardtxtcolor} />
+                </div>
+              </div>
+              <p className="md:my-0 my-5 italic font-light">Ce site n'est actuellement pas consultable</p>
             </div>
-          </a>
+          )}
         </div>
         <div className="flex flex-col lg:flex-row justify-center items-center lg:w-1/2 my-10">
           <div className="md:hover:scale-105 transform duration-500 ease-in-out flex justify-center items-center flex-col md:w-1/2 mb-5">
