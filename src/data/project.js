@@ -25,7 +25,7 @@ export const data = [
       { logo: require("../images/js.webp"), url: "https://developer.mozilla.org/fr/docs/Learn/Getting_started_with_the_web/JavaScript_basics" },
       { logo: require("../images/css.webp"), url: "https://developer.mozilla.org/fr/docs/Web/CSS" },
     ],
-    difficulties: ["Découverte de la logique de programmation", "Création de modale", "Appréhender le terminal et la gestion d'erreurs", "Premier pas face à une API"],
+    difficulties: ["Découverte de la logique de programmation", "Création de modale", "Premier pas face à une API"],
     cover: require("../images/sophie.webp"),
     bgcolor: "bg-custom-green ",
     txtcolor: "text-white",

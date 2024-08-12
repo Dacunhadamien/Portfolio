@@ -6,7 +6,7 @@ export const data = [
     what: "TypeScript est un langage de programmation open-source développé par Microsoft. Il aide les développeurs à écrire du code plus sûr et plus maintenable en apportant des fonctionnalités de typage et des outils de développement plus robustes par rapport à JavaScript pur.",
     why: "TypeScript améliore la qualité du code en détectant les erreurs dès la compilation. Il facilite la scalabilité des projets grâce à son typage statique et ses fonctionnalités orientées objet, rendant le code plus structuré et maintenable. De plus, son adoption croissante dans l'industrie en font une compétence recherchée, garantissant la durabilité et la réduction des coûts à long terme.",
     bgcolor: "bg-white ",
-    txtcolor: "text-custom-green",
+    txtcolor: "text-custom-blue",
   },
   {
     logo: require("../images/symfony.webp"),

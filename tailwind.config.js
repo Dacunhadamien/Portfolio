@@ -8,7 +8,8 @@ module.exports = {
       black: "#000000",
       "custom-yellow": "#FFC145",
       "custom-red": "#CC0000",
-      "custom-magenta": "#532938",
+      "custom-magenta": "#7D00B8",
+      "custom-blue": "#0162A2",
     },
     extend: {
       backgroundImage: {
