@@ -36,7 +36,7 @@ function Footer() {
           </span>
         </a>
         {/*Lien vers le LinkedIn en version mobile seulement */}
-        <a href="https://www.linkedin.com/in/damien-da-cunha-942367127/" aria-label="logo_linkedIn" target="_blank" rel="noreferrer" ar className="w-1/6 my-5 md:hidden">
+        <a href="https://www.linkedin.com/in/damien-da-cunha-942367127/" aria-label="logo_linkedIn" target="_blank" rel="noreferrer" className="w-1/6 my-5 md:hidden">
           <img src={linkedIn} alt="Logo de LinkedIn"></img>
         </a>
       </nav>
