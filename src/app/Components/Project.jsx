@@ -32,7 +32,7 @@ const Project = (props) => {
                   <GoClock className={"opacity-0 size-20 lg:size-32 group-hover:opacity-100 group-hover:scale-110 transition duration-500 ease-in-out " + props.cardtxtcolor} />
                 </div>
               </div>
-              <p className="md:my-0 my-5 italic font-light">Ce site n'est actuellement pas consultable</p>
+              <p className="md:my-0 my-5 italic font-light text-center">Ce site n'est actuellement pas consultable</p>
             </div>
           )}
         </div>

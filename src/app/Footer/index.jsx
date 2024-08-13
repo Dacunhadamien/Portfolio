@@ -2,7 +2,7 @@ import "typeface-montserrat";
 import linkedIn from "../../images/linkedin.webp";
 function Footer() {
   return (
-    <div className="bg-black py-3 flex md:flex-row flex-col md:justify-between justify-center text-center items-center text-base font-montserrat text-custom-green font-semibold m-5 ">
+    <div className="bg-black py-3 flex md:flex-row flex-col md:justify-between justify-center text-center items-center text-base font-montserrat text-custom-green font-semibold md:mt-5 ">
       {/*Lien vers le GitHub du Portfolio */}
       <div className="flex items-center">
         <a

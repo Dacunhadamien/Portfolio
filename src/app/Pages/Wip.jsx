@@ -10,7 +10,7 @@ function Wip() {
       {/*Ajout du Header avec retour sur la page d'acceuil */}
       <Header page={"Apprentissage"} linkname={"Acceuil"} link={""} />
       {/*Ajout de la carte contenant le Slider, ainsi que le retour à la page d'acceuil en version mobile */}
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center mt-10">
         <Slider logo={data} />
         <div className="hidden md:flex flex-col items-center justify-center group my-8"></div>
         <Link

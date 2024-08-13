@@ -11,7 +11,7 @@ const Slider = ({ logo }) => {
     setSlide(slide === 0 ? logo.length - 1 : slide - 1);
   };
   return (
-    <div className="flex justify-center items-center flex-col relative mt-0 md:mt-10 w-full md:h-[42rem] h-[46rem]">
+    <div className="flex justify-center items-center flex-col relative mt-0 md:mt-10 w-full md:h-[42rem] sm:h-[46rem] h-[54rem]">
       {/*Création d'une Slide par objet présent dans newskills.js */}
       {logo.map((item, index) => {
         return (
@@ -27,9 +27,9 @@ const Slider = ({ logo }) => {
             }
           >
             {/*Affichage du logo, avec lien vers le site concerné */}
-            <div className="flex flex-row items-center justify-center size-1/3 p-5">
+            <div className="flex flex-row items-center justify-center w-8/12 md:w-5/12 p-5">
               <a href={item.url} target="_blank" rel="noreferrer">
-                <img src={item.logo} alt={`Logo ${index}`} className="block size-3/5 md:size-2/5 m-auto hover:scale-110 transform duration-300 ease-in-out"></img>
+                <img src={item.logo} alt={`Logo ${index}`} className="block size-2/5 m-auto hover:scale-110 transform duration-300 ease-in-out"></img>
               </a>
             </div>
             {/*Paragraphe de description*/}
