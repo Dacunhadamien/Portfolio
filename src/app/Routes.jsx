@@ -6,8 +6,11 @@ import Wip from "./Pages/Wip";
 const AppRoutes = () => {
   return (
     <Routes>
+      {/*Route de la page d'acceuil */}
       <Route path="/" element={<Home />} />
+      {/*Route de la page d'erreur 404 */}
       <Route path="/*" element={<Error404 />} />
+      {/*Route de la page Apprentissage */}
       <Route path="/Wip" element={<Wip />} />
     </Routes>
   );

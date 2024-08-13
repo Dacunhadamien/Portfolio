@@ -1,13 +1,15 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Header from "../Header/header_alt.jsx";
+import Header from "../Header/index.jsx";
 import { data } from "../../data/newskills.js";
 import Slider from "../Components/Slider.jsx";
 
 function Wip() {
   return (
     <div>
-      <Header />
+      {/*Ajout du Header avec retour sur la page d'acceuil */}
+      <Header page={"Apprentissage"} linkname={"Acceuil"} link={""} />
+      {/*Ajout de la carte contenant le Slider, ainsi que le retour à la page d'acceuil en version mobile */}
       <div className="flex flex-col justify-center items-center">
         <Slider logo={data} />
         <div className="hidden md:flex flex-col items-center justify-center group my-8"></div>

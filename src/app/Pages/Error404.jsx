@@ -1,10 +1,12 @@
 import { Link } from "react-router-dom";
-import Header from "../Header/header_alt";
+import Header from "../Header/index.jsx";
 
 function Error404() {
   return (
     <div>
-      <Header />
+      {/*Ajout du Header avec retour sur la page d'acceuil */}
+      <Header page={"Erreur 404"} link={""} linkname={"Acceuil"} />
+      {/*Indication de la page erreur 404 et lien de retour à la page d'acceuil */}
       <div className="flex justify-center flex-col items-center text-center text-custom-green">
         <h1 className="fontAlt text-9xl m-10">Erreur 404</h1>
         <h2 className="m-12 text-3xl">Oups! La page que vous demandez n'existe pas</h2>

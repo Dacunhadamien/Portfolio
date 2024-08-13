@@ -9,30 +9,36 @@ import { FaHourglassStart } from "react-icons/fa";
 function Home() {
   return (
     <div>
-      <Header></Header>
+      {/*Ajout du Header avec lien vers Apprentissage */}
+      <Header page={"Acceuil"} linkname={"Apprentissage"} link={"Wip"}></Header>
       <div className="flex justify-center flex-col items-center">
         <div className="hover:scale-105 transform duration-500 ease-in-out font-montserrat flex justify-center items-center flex-col bg-cover bg-center size-11/12 text-white rounded-3xl shadow-xl my-10 bg-backgroundImage bg-black">
+          {/*Titre de la page */}
           <h2 className="mg:text-8xl text-5xl text-center m-12 font-Alt">
             Damien Da Cunha<br></br> Développeur web junior
           </h2>
+          {/*Paragraphe de description */}
           <div className="m-5 text-l size-1/2 text-center">
             <p>
               Je suis un <span className="font-semibold text-custom-yellow">ancien ingénieur du son</span> et compositeur reconvertit en{" "}
               <span className="font-semibold text-custom-yellow">développeur web junior</span>, et ceci est le résumé de mon travail.
             </p>
           </div>
+          {/*Accès au GitHub général */}
           <div className="flex justify-center items-center flex-col p-3 mt-5">
             <span className="md:text-xl font-Alt text-center">Accédez à mes répos GitHub ci dessous :</span>
             <a href="https://github.com/Dacunhadamien" target="_blank" rel="noreferrer" className=" flex justify-center items-center flex-col ">
               <img src={githubwhite} alt="Logo GitHub" className="size-20 m-10 hover:scale-110 transition duration-500 "></img>
             </a>
           </div>
+          {/*Flèche d'indication de descente sur la page (permet également de rejoindre le premier projet) */}
           <div className="flex flex-col items-center justify-center border-t-2 md:w-[42rem] w-[20rem]">
             <a href="#HTML/CSS" className="py-5">
               <FaArrowDown aria-label="arrowdown_icon" className="md:size-16 animate-bounce size-12 text-custom-yellow hover:text-custom-red my-6 hover:scale-110 transform duration-500" />
             </a>
           </div>
         </div>
+        {/*Barre de navigation vers les différents projets (permet de scroller directement sur ces derniers) */}
         <nav className="m-5 flex flex-wrap justify-end flex-row text-custom-green font-semibold">
           {data.map((item, index) => {
             return (
@@ -46,6 +52,7 @@ function Home() {
             );
           })}
         </nav>
+        {/*Création des cartes de projets */}
         {data.map((items, index) => (
           <Project
             key={index}
@@ -62,6 +69,7 @@ function Home() {
             url={items.url}
           ></Project>
         ))}
+        {/*Flèche de retour en haut de la page */}
         <div className="flex flex-col items-center justify-center group">
           <a href="#top">
             <FaArrowUp
@@ -71,6 +79,7 @@ function Home() {
           </a>
         </div>
       </div>
+      {/*Section pré-footer visible seulement sur mobile */}
       <div className="text-custom-yellow flex justify-center items-center flex-col text-center pt-10 pb-5 bg-black md:hidden" id="bot">
         <p className="md:text-xl text-center text-sm size-11/12 font-semibold font-Alt">Cliquez ci dessous pour découvrir mes compétences en cours d'acquisition :</p>
         <Link to="/Wip" className="flex justify-center ">
