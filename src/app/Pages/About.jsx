@@ -13,7 +13,7 @@ function About() {
           {/*Paragraphe de description */}
           <div className="m-5 md:text-l text-sm md:size-1/2 size-2/3 text-center flex flex-col">
             <p className="my-5">
-              Bonjour, et bienvenue sur mon portfolio. Je suis Da Cunha Damien, et à la suite d'un BTS Audiovisuel en alternance ainsi que de 8 années en tant qu'ingénieur du son et compositeur, j'ai
+              Bonjour, et bienvenue sur mon portfolio. Je suis Da Cunha Damien, et à la suite d'un BTS Audiovisuel en alternance ainsi que 8 années en tant qu'ingénieur du son et compositeur, j'ai
               décidé de me reconvertir en développeur Web.
             </p>
             <p className="my-5">
@@ -41,7 +41,7 @@ function About() {
               </a>{" "}
               ou en{" "}
               <a href="mailto:damien.dacunha64@gmail.com" className="text-custom-yellow underline">
-                m'envoyant un mail
+                m'envoyant un mail.
               </a>
             </p>
             <p className="my-5">Je vous souhaite une agréable visite sur mon portfolio !</p>
