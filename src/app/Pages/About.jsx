@@ -30,7 +30,7 @@ function About() {
             <p className="my-5">
               Vous pouvez retrouver la liste de ces projets en vous rendant sur la{" "}
               <Link to={"/"} className="text-custom-yellow underline">
-                page d'acceuil.
+                page d'accueil.
               </Link>
             </p>
             <p className="my-10">
