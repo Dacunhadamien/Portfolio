@@ -10,7 +10,7 @@ function Home() {
   return (
     <div>
       {/*Ajout du Header avec lien vers Apprentissage */}
-      <Header page={"Acceuil"} linkname={"Apprentissage"} link={"Wip"}></Header>
+      <Header page={"Accueil"} linkname={"Apprentissage"} link={"Wip"} linkname2={"À propos"} link2={"About"}></Header>
       <div className="flex justify-center flex-col items-center">
         <div className="hover:scale-105 transform duration-500 ease-in-out font-montserrat flex justify-center items-center flex-col bg-cover bg-center size-11/12 text-white rounded-3xl shadow-xl my-10 bg-backgroundImage bg-black">
           {/*Titre de la page */}

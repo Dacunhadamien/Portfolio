@@ -7,9 +7,9 @@ import Slider from "../Components/Slider.jsx";
 function Wip() {
   return (
     <div>
-      {/*Ajout du Header avec retour sur la page d'acceuil */}
-      <Header page={"Apprentissage"} linkname={"Acceuil"} link={""} />
-      {/*Ajout de la carte contenant le Slider, ainsi que le retour à la page d'acceuil en version mobile */}
+      {/*Ajout du Header avec retour sur la page d'accueil */}
+      <Header page={"Apprentissage"} linkname={"Accueil"} link={""} linkname2={"À propos"} link2={"About"} />
+      {/*Ajout de la carte contenant le Slider, ainsi que le retour à la page d'accueil en version mobile */}
       <div className="flex flex-col justify-center items-center mt-10">
         <Slider logo={data} />
         <div className="hidden md:flex flex-col items-center justify-center group my-8"></div>
@@ -17,7 +17,7 @@ function Wip() {
           to="/"
           className="text-xl font-Alt md:hidden m-12 hover:scale-110 text-custom-green hover:text-custom-yellow transform duration-300 bg-left-bottom bg-gradient-to-r from-custom-green to-custom-yellow bg-[length:0%_2px] bg-no-repeat hover:bg-[length:100%_2px]  ease-out text-center"
         >
-          Retourner sur la page d'acceuil
+          Retourner sur la page d'accueil
         </Link>
       </div>
     </div>
